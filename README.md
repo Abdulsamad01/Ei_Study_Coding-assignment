@@ -69,23 +69,28 @@ This part of the project implements a **console-based smart office facility syst
    java Main
 
 
-Possible Input/Output:
-Console Input	Output
-Config room count 3	"Office configured with 3 meeting rooms: Room 1, Room 2, Room 3."
-Config room max capacity 1 10	"Room 1 maximum capacity set to 10."
-Add occupant 1 2	"Room 1 is now occupied by 2 persons. AC and lights turned on."
-Block room 1 09:00 60	"Room 1 booked from 09:00 for 60 minutes."
-Cancel room 1	"Booking for Room 1 cancelled successfully."
+### Possible Input/Output:
 
-Error Cases:
-Console Input	Output
-Block room 1 09:00 60 (already booked)	"Room 1 is already booked during this time. Cannot book."
-Cancel room 2 (not booked)	"Room 2 is not booked. Cannot cancel booking."
-Add occupant 2 1	"Room 2 occupancy insufficient to mark as occupied."
-Add occupant 4 2 (non-existent room)	"Room 4 does not exist."
-Block room A 09:00 60 (invalid room)	"Invalid room number. Please enter a valid room number."
-Config room max capacity 1 -5	"Invalid capacity. Please enter a valid positive number."
-Room status 1 (unoccupied > 5 mins)	"Room 1 is now unoccupied. Booking released. AC and lights off."
+| Console Input                            | Output                                                     |
+|------------------------------------------|-------------------------------------------------------------|
+| `Config room count 3`                    | "Office configured with 3 meeting rooms: Room 1, Room 2, Room 3." |
+| `Config room max capacity 1 10`          | "Room 1 maximum capacity set to 10."                        |
+| `Add occupant 1 2`                       | "Room 1 is now occupied by 2 persons. AC and lights turned on." |
+| `Block room 1 09:00 60`                  | "Room 1 booked from 09:00 for 60 minutes."                  |
+| `Cancel room 1`                          | "Booking for Room 1 cancelled successfully."                |
+
+### Error Cases:
+
+| Console Input                            | Output                                                     |
+|------------------------------------------|-------------------------------------------------------------|
+| `Block room 1 09:00 60` (already booked) | "Room 1 is already booked during this time. Cannot book."   |
+| `Cancel room 2` (not booked)             | "Room 2 is not booked. Cannot cancel booking."              |
+| `Add occupant 2 1`                       | "Room 2 occupancy insufficient to mark as occupied."        |
+| `Add occupant 4 2` (non-existent room)   | "Room 4 does not exist."                                    |
+| `Block room A 09:00 60` (invalid room)   | "Invalid room number. Please enter a valid room number."    |
+| `Config room max capacity 1 -5`          | "Invalid capacity. Please enter a valid positive number."    |
+| `Room status 1` (unoccupied > 5 mins)    | "Room 1 is now unoccupied. Booking released. AC and lights off." |
+
 
 
 Tech Stack:
