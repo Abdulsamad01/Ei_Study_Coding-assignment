@@ -98,18 +98,9 @@ Language: Java
 Design Patterns: Singleton, Observer, Command.
 OOP Principles: SOLID, Encapsulation, Abstraction, Polymorphism.
 
-Project Structure:
-.
-├── ACSystem.java
-├── BookRoomCommand.java
-├── CancelRoomCommand.java
-├── Command.java
-├── LightingSystem.java
-├── Main.java
-├── OfficeManager.java
-├── Observer.java
-├── Room.java
-└── RoomStatusCommand.java
+### Project Structure:
+
+. ├── ACSystem.java ├── BookRoomCommand.java ├── CancelRoomCommand.java ├── Command.java ├── LightingSystem.java ├── Main.java ├── OfficeManager.java ├── Observer.java ├── Room.java └── RoomStatusCommand.java
 
 License:
 This project is licensed under the MIT License. Feel free to use and modify the code as per your requirements.
